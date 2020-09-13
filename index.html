@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"><!-- Кодировка символов
+документа -->
+	<title>Язык HTML</title><!-- Название документа-->	
+	 <style>
+   TABLE {
+    background: black; /* Цвет фона таблицы */
+    color: black; /* Цвет текста */
+   }
+   TD {
+    background: white; /* Цвет фона ячеек */
+   }
+  </style>	
+</head>
+<body>
+	<form>
+		<div id="list">
+			<h1>Нумерованный список</h1>
+			<hr>
+			<ol type = "1" start="0">
+				<li>Роза</li>
+				<li>Гвоздика</li>
+				<li>Тюльпан</li>
+				<li>Ромашка </li>
+				<li>Подсолнух </li>
+				<li>Нарцисс </li>
+			</ol>
+		</div>
+		<div id="table">
+			<h1>Таблица</h1>
+			<hr>
+			<table>				
+				<tr><td colspan="3">Ячейка 1</td></tr>
+				<tr><td rowspan="2">Ячейка 2</td><td>Ячейка 3</td><td>Ячейка 4</td></tr>
+				<tr><td>Ячейка 5</td><td>Ячейка 6</td></tr>
+			</table>
+		</div>
+		<div id="checkbox">
+			<h1><mark>Флажки</mark> и <mark>ползунок</mark></h1>
+			<hr>
+			<span><input type="checkbox" name="a" value="HTML" checked="checked"> HTML </span><br>
+			<span><input type="checkbox" name="a" value="CSS"> CSS </span><br>
+			<span><input type="checkbox" name="a" value="JavaScript" checked="checked"> JavaScript </span>
+		</div>
+		<div id="slider">
+			<p>Выберите число: <br> 0 <input type="range" min="0" max="10" step="1" value="5" > 10 <input type="button" value=" Отправить "> <br>
+			<input type="reset"></p>
+		</div>
+		<details>
+			<summary>Какая это птица?</summary>
+   			<p>Сова!</p>
+  		</details>
+		<pre>
+	/╲   ︵   ╱\
+	l (◉) (◉) l
+	\  ︶ V︶  /
+	/↺↺↺↺↺↺\
+	↺↺↺↺↺↺↺
+	\↺↺↺↺↺↺/
+	 ¯/\ ¯ /\¯     </pre>
+
+	<span><time>1554</time> Тюльпаны завезли в Европу из Азии.</span>
+	<span><time>1629</time> В Англии появилась гвоздика и стала любимым цветком королевы Елизаветы I. </span>
+	<div><time>1734</time> Гиацинты получили широкое распространение, когда их луковицы с разбившегося корабля прибило к побережью Голландии.</div>
+	<div><time>1789</time> Начало появления хризантем на европейском континенте, когда несколько кустов привезли из Китая во Францию.</div>
+	  
+    <figure>
+    	<p><img src="flower.jpg" alt="" /></p>
+    	<figcaption>Гербера</figcaption>
+   	</figure>
+   	<img src="lily.jpg" width="700" height="700" alt="lily">
+   	<p>Лилия Лапик</p>
+
+   	<a href="http://www.flowersweb.info">Сайт для любителей цветов</a>
+   	<a href="#list">Список самых популярных цветов</a>
+	</form>
+</body>
+</html>
